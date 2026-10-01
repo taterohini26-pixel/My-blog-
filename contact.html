@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>संपर्क | रोहिणी ताटे</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">आपले <span>लेख </span>आपली <span>ओळख </span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">होम</a></li>
+            <li><a href="about.html">माझ्याबद्दल</a></li>
+            <li><a href="blog.html">लेख (Blogs)</a></li>
+            <li><a href="contact.html" class="active">संपर्क</a></li>
+        </ul>
+        <div class="nav-controls">
+            <div id="google_translate_element"></div>
+            <button id="theme-toggle">🌙</button>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="page-title">
+            <h1>📬 संपर्क साधा</h1>
+            <p>तुमचा अभिप्राय किंवा संदेश माझ्यापर्यंत नक्की पोहोचवा</p>
+        </div>
+
+        <div class="contact-wrapper">
+            <div class="card">
+                <!-- Web3Forms API Integration -->
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                    
+                    <!-- Web3Forms कडून मिळालेली Access Key इथे टाका -->
+                    <input type="hidden" name="access_key" value="beb8e800-3e88-4185-a8ca-74b4985b4a59">
+
+                    <div class="form-group">
+                        <label for="name">तुमचे नाव</label>
+                        <input type="text" id="name" name="name" placeholder="तुमचे नाव" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">तुमचा ईमेल</label>
+                        <input type="email" id="email" name="email" placeholder="तुमचा ईमेल" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">संदेश</label>
+                        <textarea id="message" name="message" placeholder="तुमचा संदेश येथे लिहा..." rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">पाठवा 🚀</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© २०२६ सर्व हक्क सुरक्षित | Built with HTML, CSS & JS</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'mr',
+            includedLanguages: 'en,hi,mr,gu,ta,te,kn,es,fr,de',
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        }, 'google_translate_element');
+    }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>

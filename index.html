@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>माझा ब्लॉग आणि पोर्टफोलिओ | रोहिणी ताटे</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">आपले <span>लेख </span>आपली <span>ओळख </span></div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">होम</a></li>
+            <li><a href="about.html">माझ्याबद्दल</a></li>
+            <li><a href="blog.html">लेख (Blogs)</a></li>
+            <li><a href="contact.html">संपर्क</a></li>
+        </ul>
+        <div class="nav-controls">
+            <div id="google_translate_element"></div>
+            <button id="theme-toggle">🌙</button>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="card hero-banner">
+            <span class="hero-badge">👋 स्वागत आहे माझ्या डिजिटल जगात</span>
+            <h1>नमस्कार, मी आहे <span class="highlight">रोहिणी ताटे</span></h1>
+            <p class="hero-subtext">माझे लेख, माझे विचार — भावनांनी भरलेले, प्रेरणादायी आणि आनंददायी! येथे तांत्रिक विषयांसोबतच जीवनातील सुंदर अनुभव वाचायला मिळतील.</p>
+            <div class="hero-buttons">
+                <a href="blog.html" class="btn-primary">लेख वाचा 📖</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© २०२६ सर्व हक्क सुरक्षित | Built with HTML, CSS & JS</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'mr',
+            includedLanguages: 'en,hi,mr,gu,ta,te,kn,es,fr,de',
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        }, 'google_translate_element');
+    }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
